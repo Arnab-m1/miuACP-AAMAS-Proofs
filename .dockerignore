@@ -1,0 +1,10 @@
+# Ignore files that shouldn't be copied into Docker image
+*.pdf
+.git
+.gitignore
+*.md
+__pycache__
+*.pyc
+*.aux
+*.log
+

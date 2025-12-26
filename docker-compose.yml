@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  muacp-verification:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: muacp-verification:latest
+    container_name: muacp-verification
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
+    stdin_open: true
+    tty: true
+    command: /bin/bash
+

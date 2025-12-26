@@ -1,0 +1,25 @@
+# μACP Tool Versions Manifest
+# This file documents the exact tool versions required for reproducibility
+
+## TLA+ Tools
+TLA_TOOLS_VERSION=1.8.0
+TLC_VERSION=2.16+
+JAVA_VERSION=17
+
+## Coq
+COQ_VERSION=8.17.1
+OPAM_VERSION=latest
+
+## System Requirements
+UBUNTU_VERSION=22.04
+BUILD_ESSENTIAL=required
+
+## Installation Methods
+# Method 1: Docker (recommended for reproducibility)
+#   docker build -t muacp-verification .
+#   docker run -it -v $(pwd):/workspace muacp-verification
+
+# Method 2: Manual Installation
+#   TLA+: Download from https://github.com/tlaplus/tlaplus/releases
+#   Coq: Install via opam (opam install coq.8.17.1)
+
